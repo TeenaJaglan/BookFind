@@ -1,0 +1,60 @@
+.alls{
+  position:absolute;
+ opacity: 0.9;
+  z-index:1;
+  width:95vw;
+  height:93vh;
+  margin-top:3rem;
+  left:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  
+}
+.dialogbox{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ padding:1rem;
+ width:37%;
+ height:auto;
+ position: absolute;
+ border: 2px solid black;
+ 
+}
+.para{
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btngrp{
+display: flex;
+flex-direction: row;
+word-break: keep-all;
+text-align: center;
+}
+@media only screen and (max-width:500px){
+  .btngrp{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.btn1{
+  padding: 0.4rem;
+  background-color: gray;
+  margin:0.3rem;
+  border-radius:5px ;
+}
+.btn2{
+  padding: 0.4rem;
+  background-color: yellow;
+  margin:0.3rem;
+  border-radius:5px ;
+}
+.dialog::backdrop{
+  background-color: salmon;
+ opacity:2;
+ backdrop-filter: blur(20px);
+ 
+}

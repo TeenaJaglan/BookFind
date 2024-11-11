@@ -1,0 +1,124 @@
+
+
+.p1,.p2,.p3,.p4,.p5,.p6{
+  width:auto;
+  max-height: 100px;
+  overflow: scroll;
+  font-size: 1rem;
+  word-break:break-all;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  text-align: start;
+  padding:0.3rem;
+}
+.image{
+ 
+  width: 40%;
+  height:300px;
+  max-width: 40%;
+  min-width: 9rem;
+  padding:5px;
+  border:2px solid white;
+}
+img{
+  width:auto;
+  max-height:200px;
+  max-width: 100%;
+  height:100%;
+  background-size: contain;
+  object-fit: cover;
+}
+.mainbox{
+  width:75%;
+  display: flex;
+  margin: 1rem ;
+  padding: 1rem ;
+  min-width : 3rem;
+  border: 2px solid rgb(0, 0, 0);
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left:10%;
+  right:10%;
+  border-radius:5px;
+}
+.sidebox{
+  padding:1rem;
+  margin:1rem;
+  width:70%;;
+  text-overflow:hidden;
+  word-wrap: normal;
+  flex-shrink:1;
+}
+.details img{
+  width: 80px;
+  height: 90px ;
+}
+.details strong{
+  margin-bottom: 10px;
+}
+.details{
+  width: 100px;
+  height: 150px ;
+  border:2px solid black ;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 2px;
+  padding:0.2rem ;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width:400px){
+  .mainbox{
+    display: flex;
+    flex-direction: row;
+  }
+  
+}
+@media only screen and (max-width:400px){
+  .buttonbox{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+.buttonbox{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+
+}
+.buttonbox .button1 ,.button2 {
+width:45%;
+background-color: rgb(207, 204, 2);
+height:50px;
+}
+.button1,.button2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.buttonbox .button1 .logo4{
+  background-color: rgb(207, 204, 2);
+  margin-left:0.4rem;
+  
+}
+.buttonbox .button2 .logo4{
+  background-color: rgb(207, 204, 2);
+  margin-left:0.4rem;
+  
+}
+.detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: scroll;
+}
